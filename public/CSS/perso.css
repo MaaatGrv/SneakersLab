@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  padding: 2%;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #f0f0f2, #B7C9CB);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  min-height: 140vh;
+  width: 90%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(183, 201, 203, 0.7),
+    rgba(183, 201, 203, 0.5)
+  );
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  flex-direction: column;
+}
+.circle1,
+.circle2,
+.circle3 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 3%;
+  right: 2%;
+}
+
+.circle2 {
+  bottom: 20%;
+  left: 3%;
+}
+
+.circle3 {
+  bottom: -40%;
+  right: 3%;
+}
+
+.slide1 {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.imagery img {
+  width: 400px;
+  object-fit: contain;
+	object-position: top;
+	animation: fadein 1s ease-in-out forwards;
+	animation-delay: 0.5s;
+}
+
+.product-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(238, 205, 154, 1),
+    rgba(238, 205, 154, 0.5)
+  );
+  height: 40rem;
+  width: 85rem;
+  border-radius: 150px;
+}
+
+.insidedetail {
+  margin: 5%;
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail {
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 15px
+}
+
+.TitreOptions {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.btn_grid {
+	display: flex;
+	margin: 0px -15px;
+}
+
+.btn_grid .btn_wrap {
+	flex: 1 1 50%;
+	width: 50%;
+	padding: 15px;
+}
+
+button {
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+	border: 2px solid #EEE;
+	color: #313131;
+	transition: 0.4s;
+  height: 3rem;
+  width: 7rem;
+}
+button:hover {
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+button.modele {
+	position: relative;
+	z-index: 1;
+}
+button.modele::before,
+button.modele::after {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	right: -3px;
+	bottom: -3px;
+	transition: 0.4s;
+}
+button.modele::after {
+	z-index: -1;
+	background-color: #FFF;
+	border: 3px solid #EEE;
+}
+button.modele::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #ED008D, #8D00ED);
+}
+button.modele.selected::after {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+button.colour {
+	position: relative;
+	z-index: 1;
+}
+button.colour::before,
+button.colour::after {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	right: -3px;
+	bottom: -3px;
+	transition: 0.4s;
+}
+button.colour::after {
+	z-index: -1;
+	background-color: #FFF;
+	border: 3px solid #EEE;
+}
+button.colour.blue::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #38B4D7, #38B4D7);
+}
+button.colour.red::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #DE5C47, #DE5C47);
+}
+button.colour.orange::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #FF9648, #FF9648);
+}
+button.colour.green::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #92C266, #92C266);
+}
+button.colour.selected::after {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+button.lacet {
+	position: relative;
+	z-index: 1;
+}
+button.lacet::before,
+button.lacet::after {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	right: -3px;
+	bottom: -3px;
+	transition: 0.4s;
+}
+button.lacet::after {
+	z-index: -1;
+	background-color: #FFF;
+	border: 3px solid #EEE;
+}
+button.lacet.blanc::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #FAFAFA, #FAFAFA);
+}
+button.lacet.cyan::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #59A1D9, #59A1D9);
+}
+button.lacet.jaune::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #FCC10A, #FCC10A);
+}
+button.lacet.violet::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #CE89BA, #CE89BA);
+}
+button.lacet.selected::after {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.submit {
+	background-image: linear-gradient(to right, transparent 50%, #ED008D 50%, #8D00ED 100%);
+	background-size: 200%;
+	background-position: 0% 50%;
+	transition: 0.8s;
+}
+.submit:hover {
+	color: #FFF;
+	background-position: 100% 50%;
+}
+
+@keyframes fadein {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.TailleEtCart {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;  
+}
+
+button.submit {
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+	border: 2px solid #EEE;
+	color: #313131;
+	transition: 0.4s;
+  height: 3rem;
+  width: 260px;
+  margin-left: 30px;
+}

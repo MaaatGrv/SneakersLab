@@ -1,0 +1,15 @@
+{
+    "opt1":{
+        "name" : "Spray de Protection",
+        "tag": "opt1",
+        "price" : 10,
+        "incart": 0
+    },
+
+    "opt2":{
+        "name" : "Kit de nettoyage",
+        "tag": "opt2",
+        "price" : 18,
+        "incart": 0
+    }
+}

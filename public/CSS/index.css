@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  padding: 2%;
+  background: linear-gradient(to right top, #f0f0f2, #B7C9CB);
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.glass {
+  background: white;
+  height: 100%;
+  width: 90%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(183, 201, 203, 0.7),
+    rgba(183, 201, 203, 0.5)
+  );
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  flex-direction:column;
+}
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 3%;
+  right: 2%;
+}
+.circle2 {
+  bottom: 20%;
+  left: 3%;
+}
+
+.WelcomeBar {
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  height: 175px;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(226, 184, 170, 1),
+    rgba(226, 184, 170, 0.5)
+  );
+  border-radius: 150px;
+}
+
+.infobar {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  height: 100px;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(226, 184, 170, 1),
+    rgba(226, 184, 170, 0.5)
+  );
+  border-radius: 150px;
+  
+}
+
+.infobar1 {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  height: 120px;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(226, 184, 170, 1),
+    rgba(226, 184, 170, 0.5)
+  );
+  border-radius: 150px;
+  
+}
+
+.slide1,
+.slide2 {
+  flex: 0.1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.fenetre1 {
+  flex: 1;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(238, 205, 154, 1),
+    rgba(238, 205, 154, 0.5)
+  );
+  height: 35rem;
+  width: 40rem;
+  border-radius: 0 150px 0 150px;
+}
+
+.fenetre22 {
+  flex: 1;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(238, 205, 154, 1),
+    rgba(238, 205, 154, 0.5)
+  );
+  height: 35rem;
+  width: 40rem;
+  border-radius: 150px 0 150px 0;
+}
+
+.fenetre12 {
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  flex: 0.6;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.fenetre2 {
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  flex: 0.6;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.m1b {
+  width: 600px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color:  #B7C9CB;
+  padding: 1px;
+}
+
+.grid-item {
+  background-color:  #B7C9CB;
+  border: 1px solid black;
+  padding: 90px;
+  font-size: 1px;
+  text-align:center;
+}
+
+.infobartext {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-family: 'Rubik Regular';
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Style de la grille d'items */
+.slideItem {
+  flex: 0.9;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(238, 205, 154, 1),
+    rgba(238, 205, 154, 0.5)
+  );
+  height: auto;
+  border-radius: 150px;
+}
+
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Style the counter cards */
+.card, .filtre {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.filtre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  width: 1000px;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.TitreOptions {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.btn_grid {
+	display: flex;
+	margin: 0px -15px;
+}
+
+.btn_grid .btn_wrap {
+	flex: 1 1 50%;
+	width: 50%;
+	padding: 15px;
+}
+
+button {
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+	border: 2px solid #EEE;
+	color: #313131;
+	transition: 0.4s;
+  height: 3rem;
+  width: 7rem;
+}
+button:hover {
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+button.modele {
+	position: relative;
+	z-index: 1;
+}
+button.modele::before,
+button.modele::after {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	right: -3px;
+	bottom: -3px;
+	transition: 0.4s;
+}
+button.modele::after {
+	z-index: -1;
+	background-color: #FFF;
+	border: 3px solid #EEE;
+}
+button.modele::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #ED008D, #8D00ED);
+}
+button.modele.selected::after {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+button.colour {
+	position: relative;
+	z-index: 1;
+}
+button.colour::before,
+button.colour::after {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	right: -3px;
+	bottom: -3px;
+	transition: 0.4s;
+}
+button.colour::after {
+	z-index: -1;
+	background-color: #FFF;
+	border: 3px solid #EEE;
+}
+button.colour.blue::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #38B4D7, #38B4D7);
+}
+button.colour.red::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #DE5C47, #DE5C47);
+}
+button.colour.orange::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #FF9648, #FF9648);
+}
+button.colour.green::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #92C266, #92C266);
+}
+button.colour.selected::after {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+button.lacet {
+	position: relative;
+	z-index: 1;
+}
+button.lacet::before,
+button.lacet::after {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	right: -3px;
+	bottom: -3px;
+	transition: 0.4s;
+}
+button.lacet::after {
+	z-index: -1;
+	background-color: #FFF;
+	border: 3px solid #EEE;
+}
+button.lacet.blanc::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #FAFAFA, #FAFAFA);
+}
+button.lacet.cyan::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #59A1D9, #59A1D9);
+}
+button.lacet.jaune::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #FCC10A, #FCC10A);
+}
+button.lacet.violet::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #CE89BA, #CE89BA);
+}
+button.lacet.selected::after {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.submit {
+	background-image: linear-gradient(to right, transparent 50%, #ED008D 50%, #8D00ED 100%);
+	background-size: 200%;
+	background-position: 0% 50%;
+	transition: 0.8s;
+}
+.submit:hover {
+	color: #FFF;
+	background-position: 100% 50%;
+}
+
+@keyframes fadein {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.TailleEtCart {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;  
+}
+
+button.submit {
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+	border: 2px solid #EEE;
+	color: #313131;
+	transition: 0.4s;
+  height: 3rem;
+  width: 260px;
+  margin-left: 30px;
+}
+
+.grid {
+  display: flex;
+  width: 1070px;
+  flex-direction: column;
+}

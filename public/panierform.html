@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Votre Panier-Sneakers Lab</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://maps.googleapis.com/maps/api/js?sensor=false"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/panier.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <main>
+      <div class="glass">
+        <div class="dashboard"></div><br>
+        <form id='form'>
+          <input type="text" name="nom" placeholder="Nom" id="nom"><br>
+          <input type="text" name="prénom" placeholder="Prénom" id="prénom"><br>
+          <input type="text" name="email" placeholder="Email" id="email" pattern="[a-z]{1,50}@[a-z]{1,50}.[a-z]{1,50}" tittle="Adresse mail de la forme eff@rfzfr.adad"><br>
+          <input type="text" name="tel" placeholder="Numéro de Téléphone" id="tel" pattern="[0-9]{10}" title="Num de tel avec 10 chiffres"><br><br>
+          <input type="text" name="adresse" placeholder="Adresse de livraison" id="adresse"><br>
+          <div class="Cart Title">Date de livraison:</div>
+          <input type="date" name="dateL" id="dateL"  value=""><br><br>
+          <input type="text" name="numCB" placeholder="Numéro de carte banquaire" id="numCB"pattern="[0-9]{16}" title="Numero de CB avec 16 chiffres"><br>
+          <div class="Cart Title">Date d'expiration:</div>
+          <input type="date" name="expiration" id="expiration"  value=""><br><br>
+          <input type="text" name="cvc" placeholder="Numéro CVC" id="cvc" pattern="[0-9]{3}" title="Numero CVC avec 3 chiffres"><br>
+          <textarea maxlength=2000  placeholder="Des demandes particulières?"id='textarea'></textarea>
+          <div class="slide1">
+            <div class="fenetre1">
+              <div class="ProductResume">
+                <div class="GrosTitre">
+                  <div class="Cart Title">Votre Panier</div>
+                  <div class="Price Title">Prix</div>
+                  <div class="Quantity Title">Quantité</div>
+                  <div class="TotalPriceItem Title">Sous Total</div>
+                  <div class="Remove Title">Vider le panier</div>
+                </div>
+                <div class="CartInfo">
+                  <!--
+                    Code rentré avec JS : contenu du panier
+                  -->
+                </div>
+              </div>
+              <div class="Options">
+                <div class="Spray">
+                  <div class="SprayLegend">Spray de protection (10€)</div>
+                  <div class="SprayChoice">
+                    <input type="checkbox" name="options" value="spray">
+                    Ajouter
+                  </div>
+                </div>
+                <div class="Kit">
+                  <div class="KitLegend">Kit de nettoyage (18€)</div>
+                  <div class="KitChoice">
+                    <input type="checkbox" name="options" value="kit">
+                    Ajouter
+                  </div>
+                </div>
+              </div>
+              <div class="Resume">
+                <div class="PromoCode" style="width: 250px">
+                  Coupon de Réduction<br>
+                  <input type="text" name="codepromo">
+                </div>
+                <div class="TotalPrice">
+                  <!--
+                    Code rentré avec JS : contenu du panier
+                  -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="OrderBtn">
+            <button type="submit" class="Validation" id="Validation" >VALIDER MA COMMANDE</button>
+          </div>        
+        </form> 
+        <p class="Error" id="erreur"></p><br>
+        
+
+        <div class="footer">
+            <div class="logolien2">
+              <a href="../HTML/index.html">
+                <img class="LogoFooter" src="../Images/Logo2blanc.png" alt="logo">
+              </a>
+            </div>
+            <div class="column" style="background-color: transparent;">
+              <h3 class="TitreFooter">Contactez nous</h3><br>
+              <p class="adresse">Le Sneakers Lab<br>45 rue des Pommiers<br>Villeurbanne 69100</p><br>
+              <div class="click">
+                  <a class="adresse" href="tel:330642123456">Tel: 33 (0)6 42 12 34 56</a><br>
+                  <a class="adresse" href="mailto:lelabosneakers@cpe.fr?subject=Renseignement">Mail: lelabosneakers@cpe.fr</a>
+              </div>
+            </div>
+            <div class="Social">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-twitter"></a>
+            </div>
+          </div>
+      </div>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <script src="../JS/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  </body>
+</html>

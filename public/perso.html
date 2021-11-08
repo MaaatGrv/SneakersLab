@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personnalisation</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/perso.css" />
+    <link rel="icon" type="image/png" href="../Logo1.png">
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/liste.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <main>
+      <div class="topBtn"></div>
+      <div class="glass">
+        <div class="dashboard"></div>
+        <div class="slide1">
+          <div class="product-detail">
+            <div class="imagery">
+              <img src="..//Images/ImagesChaussures/m1bB.png" class="image" />
+            </div>
+            <div class="detail">
+              <div class="insidedetail">            
+                <!--
+                Identifiants chaussures:
+
+                -Choix du modèle : "m"+ Numéro Modèle + "rA.png" (tous les modèles sont rouge avec les lacets blancs à la première sélection)
+                  Numéro Modèle
+                  -> 1 : SKATE 2
+                  -> 2 : AIR 1
+                  -> 3 : JUMP 5
+                  -> 4 : CLASS G
+
+                -Choix de la couleur : "m1"+ Lettre Couleur + "A.png" (tous les modèles ont les lacets blancs à ce stade)
+                  Lettre Couleur:
+                  -> r : rouge
+                  -> b : bleu
+                  -> o : orange
+                  -> g : vert
+
+                -Choix des lacets : "m1r" + Lettre Lacet + ".png" (modèle final)
+                  Lettre Lacet :
+                  -> B : blanc
+                  -> J : jaune
+                  -> V : violet
+                  -> C : cyan
+                -->
+                <div class="ModeleOptions">
+                  <div class="TitreOptions">
+                    Modèle
+                  </div>
+                  <div class="capacity btn_grid">
+                    <div class="btn_wrap">
+                      <button type="button" class="modele selected" id="1" data-name="1">
+                        SKATE 2
+                      </button>
+                    </div>
+                    <div class="btn_wrap">
+                      <button type="button" class="modele" id="2" data-name="2">
+                        AIR 1
+                      </button>
+                    </div>
+                    <div class="btn_wrap">
+                      <button type="button" class="modele" id="3" data-name="3">
+                        JUMP 5
+                      </button>
+                    </div>
+                      <div class="btn_wrap">
+                      <button type="button" class="modele" id="4" data-name="4">
+                        CLASS G
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="ColourOptions">
+                  <div class="TitreOptions">
+                    Couleur
+                  </div>
+                  <div class="colours btn_grid">
+                    <div class="btn_wrap">
+                      <button type="button" class="colour blue selected" id='b' data-name="b" data-colour="#38B4D7">
+                        Bleu
+                      </button>
+                    </div>
+                    <div class="btn_wrap">
+                      <button type="button" class="colour red" id='r' data-name="r" data-colour="#DE5C47">
+                        Rouge
+                      </button>
+                    </div>
+                    <div class="btn_wrap">
+                      <button type="button" class="colour orange" id='o' data-name="o" data-colour="#FF9648">
+                        Orange
+                      </button>
+                    </div>
+                    <div class="btn_wrap">
+                      <button type="button" class="colour green" id='g' data-name="g" data-colour="#92C266">
+                        Vert
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="LacetOptions">
+                  <div class="TitreOptions">
+                    Lacets
+                  </div>
+                  <div class="lacets btn_grid">
+                    <div class="btn_wrap">
+                      <button type="button" class="lacet blanc selected" id='B' data-name="B" data-colour="#FAFAFA">
+                        BLANC
+                      </button>
+                    </div>
+                    <div class="btn_wrap">
+                      <button type="button" class="lacet cyan" id='C' data-name="C" data-colour="#59A1D9">
+                        CYAN
+                      </button>
+                    </div>
+                    <div class="btn_wrap">
+                      <button type="button" class="lacet jaune" id='J' data-name="J" data-colour="#FCC10A">
+                        JAUNE
+                      </button>
+                    </div>
+                    <div class="btn_wrap">
+                      <button type="button" class="lacet violet" id='V' data-name="V" data-colour="#CE89BA">
+                        VIOLET
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="TailleEtCart">
+                  <div class="TailleOptions">
+                    <div class="TitreOptions">
+                    </div>
+                    <div class="custom-select" style="width:260px;">
+                      <select>
+                        <option value="0" data-name="36">36</option>
+                        <option value="1" data-name="36">37</option>
+                        <option value="2" data-name="36">38</option>
+                        <option value="3" data-name="36">39</option>
+                        <option value="4" data-name="36">40</option>
+                        <option value="5" data-name="36">41</option>
+                        <option value="6" data-name="36">42</option>
+                        <option value="7" data-name="36">43</option>
+                        <option value="8" data-name="36">44</option>
+                        <option value="9" data-name="36">45</option>
+                        <option value="10" data-name="36">46</option>
+                        <option value="11" data-name="36">47</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="addtocart">
+                    <button type="submit" class="submit" id="submit">AJOUTER AU PANIER</button>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div> 
+        <div class="footer"></div>
+      </div>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <script src="../JS/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  </body>
+</html>

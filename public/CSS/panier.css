@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  padding: 2%;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #f0f0f2, #B7C9CB);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  min-height: 140vh;
+  width: 90%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(183, 201, 203, 0.7),
+    rgba(183, 201, 203, 0.5)
+  );
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  flex-direction: column;
+}
+.circle1,
+.circle2,
+.circle3 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 3%;
+  right: 2%;
+}
+
+.circle2 {
+  bottom: 20%;
+  left: 3%;
+}
+
+.circle3 {
+  bottom: -40%;
+  right: 3%;
+}
+
+.slide1 {
+  flex: 0.1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.fenetre1 {
+  flex: 0.9;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(238, 205, 154, 1),
+    rgba(238, 205, 154, 0.5)
+  );
+  height: auto;
+  width: 40rem;
+  border-radius: 150px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.GrosTitre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.CartInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: auto;
+}
+
+.Products {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 120px;
+  border-bottom: 2px solid black;
+}
+
+.ProductResume {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.Title,
+.Info,
+.Infos {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 50px;
+  width: 150px;
+}
+
+button.Order,
+button.BackToShopping,
+button.Validation {
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #EEE;
+  color: #313131;
+  transition: 0.4s;
+  height: 5rem;
+  width: 200px;
+  margin: 5%;
+}
+
+.Order,
+.BackToShopping,
+.Validation {
+  background-image: linear-gradient(to right, transparent 50%, #ED008D 50%, #8D00ED 100%);
+  background-size: 200%;
+  background-position: 0% 50%;
+  transition: 0.8s;
+}
+.Order:hover,
+.BackToShopping:hover,
+.Validation:hover {
+  color: #FFF;
+  background-position: 100% 50%;
+}
+
+.Note  {
+  resize: none;
+}
+
+.OrderBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.Resume {
+  display: flex;
+  width: 750px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.Options {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  border-bottom: 2px solid black;
+  margin-top: 2%;
+}
+
+.CartInfo ion-icon,
+.Opt ion-icon {
+  font-size: 25px;
+  color: rgba(82, 104, 118, 1);
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.ProductImage {
+  width: 130px;
+}
+
+.Panier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.Spray,
+.Kit {
+  display: flex;
+  width: 750px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2%;
+}
+
+.Error {
+  color: rgb(255, 0, 0);
+  font-size: 1,25rem;
+  flex: 1;
+  margin-top: 0%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(226, 184, 170, 1),
+    rgba(226, 184, 170, 0.5)
+  );
+  border-radius: 150px;
+}
+
+.Opt {
+  display: flex;
+  flex-direction: row;
+}

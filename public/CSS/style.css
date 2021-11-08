@@ -1,0 +1,157 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.dashboard {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(
+      to right bottom,
+      rgba(82, 104, 118, 1),
+      rgba(82, 104, 118, 0.3)
+    );
+    border-radius: 0 0 150px 0;
+  }
+  
+  li, a {
+    font-weight:500;
+    font-size: 1.2rem;
+    font-family: 'Rubik Regular';
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .nav__links {
+    margin-top: 13.5%
+  }
+  
+  .logolien {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  
+  .logo1 {
+    cursor: pointer;
+    width: 220px;
+  }
+  
+  .logo2 {
+    margin-top: 5%;
+    margin-right: 5%;
+    cursor: pointer;
+    width: 220px;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #EECD9A;
+  }
+
+
+.footer {
+    height: 250px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background: linear-gradient(
+      to right bottom,
+      rgba(82, 104, 118, 1),
+      rgba(82, 104, 118, 0.3)
+    );
+    border-radius: 0 150px 0 0 ;
+  }
+  
+  
+  .TitreFooter {
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    font-family: 'Rubik Regular';
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .adresse {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-family: 'Rubik Regular';
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .click {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-family: 'Rubik Regular';
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .LogoFooter {
+    cursor: pointer;
+    width: 300px;
+  }
+  
+  .fa {
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .cartnb {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+  }
+
+  .logocart {
+    margin-right: 5px;
+  }
+
+
+  .to-top {
+    background: transparent;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color: rgba(82, 104, 118, 1);
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  
+  .to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
+  

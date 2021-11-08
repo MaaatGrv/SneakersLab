@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  padding: 2%;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #f0f0f2, #B7C9CB);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  height: auto;
+  width: 90%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(183, 201, 203, 0.7),
+    rgba(183, 201, 203, 0.5)
+  );
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  flex-direction: column;
+}
+.circle1,
+.circle2,
+.circle3 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 3%;
+  right: 2%;
+}
+
+.circle2 {
+  bottom: 20%;
+  left: 3%;
+}
+
+.circle3 {
+  bottom: -40%;
+  right: 3%;
+}
+
+.slideinfo {
+  flex: 0.1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.fenetreinfo {
+  flex: 0.9;
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(238, 205, 154, 1),
+    rgba(238, 205, 154, 0.5)
+  );
+  height: 35rem;
+  width: 40rem;
+  border-radius: 150px;
+}
